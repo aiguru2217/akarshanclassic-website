@@ -23,7 +23,7 @@
   "name": "Akarshan Classic",
   "image": "https://akarshanclassic.in/logo.png",
   "url": "https://akarshanclassic.in/",
-  "telephone": "+91-9673553564",
+  "telephone": "+91-9850355356",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Shop No. 1/A, Jeet Complex, Behind Gopal Culture Hall, Opp. Farm Foods, Osmanpura Circle",
@@ -46,6 +46,7 @@
     --brand: #c92a65;
     --brand-ink: #a81f53;
     --on-brand: #fff7fa;
+    --sign-shadow: 0 24px 60px -24px rgba(169, 31, 83, .45);
     --radius: 16px;
   }
   @media (prefers-color-scheme: dark) {
@@ -59,6 +60,7 @@
       --brand: #e0457f;
       --brand-ink: #f07aa5;
       --on-brand: #1a0b11;
+      --sign-shadow: 0 24px 50px -24px rgba(0, 0, 0, .6);
     }
   }
   *, *::before, *::after { box-sizing: border-box; }
@@ -114,7 +116,7 @@
   .actions { display: flex; flex-wrap: wrap; gap: 12px; }
   .sign {
     border-radius: var(--radius); overflow: hidden;
-    box-shadow: 0 24px 60px -24px rgba(169, 31, 83, .45);
+    box-shadow: var(--sign-shadow);
     transform: rotate(1.5deg);
   }
   .sign img { width: 100%; height: auto; }
@@ -182,7 +184,7 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="#">Akarshan <span>Classic</span></a>
-    <a class="btn btn-primary" href="tel:+919673553564" aria-label="Call the store"><i class="ph ph-phone"></i><span>Call the store</span></a>
+    <a class="btn btn-primary" href="tel:+919850355356" aria-label="Call the store"><i class="ph ph-phone"></i><span>Call the store</span></a>
   </div>
 </header>
 
@@ -254,8 +256,15 @@
         <div class="row">
           <i class="ph ph-phone"></i>
           <div>
-            <strong>Phone</strong>
-            <a href="tel:+919673553564">+91 96735 53564</a>
+            <strong>Call</strong>
+            <a href="tel:+919850355356">+91 98503 55356</a>
+          </div>
+        </div>
+        <div class="row">
+          <i class="ph ph-whatsapp-logo"></i>
+          <div>
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/919673553564" target="_blank" rel="noopener">+91 96735 53564</a>
           </div>
         </div>
         <div class="row">
